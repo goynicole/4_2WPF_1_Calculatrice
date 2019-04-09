@@ -1,0 +1,31 @@
+﻿<Window x:Class="Calculatrice_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculatrice_2"
+        mc:Ignorable="d"
+       Title="Calculatrice" Height="400" Width="300">
+    <Grid>
+        <Button x:Name="button" Content="0" HorizontalAlignment="Left" Margin="0,316,0,-1" VerticalAlignment="Top" Width="219" Height="55" Background="#FF3FE8A3" FontWeight="Bold" FontSize="18" Click="Button_Click"/>
+        <Button x:Name="button1" Content="1" HorizontalAlignment="Left" Margin="0,261,0,0" VerticalAlignment="Top" Width="73" Height="55" Background="#FF3FE8A3" FontWeight="Bold" FontSize="18" Click="Button_Click"/>
+        <Button x:Name="button2" Content="2" HorizontalAlignment="Left" Margin="73,261,0,0" VerticalAlignment="Top" Width="73" Height="55" Background="#FF3FE8A3" FontWeight="Bold" FontSize="18" Click="Button_Click"/>
+        <Button x:Name="button3" Content="3" HorizontalAlignment="Left" Margin="146,261,0,0" VerticalAlignment="Top" Width="73" Height="55" Background="#FF3FE8A3" FontWeight="Bold" FontSize="18" Click="Button_Click"/>
+        <Button x:Name="button4" Content="=" HorizontalAlignment="Left" Margin="219,261,0,-1" VerticalAlignment="Top" Width="73" Height="110" FontSize="18" FontWeight="Bold" Background="#FFF7F4AD" Click="ButtonClickEqual"/>
+        <Button x:Name="button5" Content="4" HorizontalAlignment="Left" Margin="0,206,0,0" VerticalAlignment="Top" Width="73" Height="55" Background="#FF3FE8A3" FontWeight="Bold" FontSize="18" Click="Button_Click"/>
+        <Button x:Name="button6" Content="5" HorizontalAlignment="Left" Margin="73,206,0,0" VerticalAlignment="Top" Width="73" Height="55" Background="#FF3FE8A3" FontWeight="Bold" FontSize="18" Click="Button_Click"/>
+        <Button x:Name="button7" Content="6" HorizontalAlignment="Left" Margin="146,206,0,0" VerticalAlignment="Top" Width="73" Height="55" Background="#FF3FE8A3" FontWeight="Bold" FontSize="18" Click="Button_Click"/>
+        <Button x:Name="button8" Content="7" HorizontalAlignment="Left" Margin="0,151,0,0" VerticalAlignment="Top" Width="73" Height="55" BorderBrush="#FF47F7AF" Background="#FF47F7AF" FontWeight="Bold" FontSize="18" Click="Button_Click"/>
+        <Button x:Name="button9" Content="9" HorizontalAlignment="Left" Margin="146,151,0,0" VerticalAlignment="Top" Width="73" Height="55" Background="#FF3FE8A3" FontWeight="Bold" FontSize="18" Click="Button_Click"/>
+        <Button x:Name="button10" Content="8" HorizontalAlignment="Left" Margin="73,151,0,0" VerticalAlignment="Top" Width="73" Height="55" Background="#FF3FE8A3" FontWeight="Bold" FontSize="18" Click="Button_Click"/>
+        <Button x:Name="button11" Content="+" HorizontalAlignment="Left" Margin="219,206,0,0" VerticalAlignment="Top" Width="73" Height="55" Background="#FF3FE8A3" FontWeight="Bold" FontSize="18" Click="ButtonClickAdd"/>
+        <Button x:Name="button12" Content="-" HorizontalAlignment="Left" Margin="219,151,0,0" VerticalAlignment="Top" Width="73" Height="55" Background="#FF3FE8A3" FontWeight="Bold" FontSize="18" Click="ButtonClickMinus"/>
+        <Button x:Name="button13" Content="Reset" HorizontalAlignment="Left" Margin="0,96,0,0" VerticalAlignment="Top" Width="146" Height="55" BorderBrush="#FFEE3FEE" Background="#FFEE16DA" FontWeight="Bold" FontSize="18" Click="ButtonClickReset"/>
+        <Button x:Name="button15" Content="/" HorizontalAlignment="Left" Margin="146,96,0,0" VerticalAlignment="Top" Width="73" Height="55" Background="#FF47F7AF" FontWeight="Bold" FontSize="18" Click="ButtonClickDivide"/>
+        <Button x:Name="button16" Content="*" HorizontalAlignment="Left" Margin="219,96,0,0" VerticalAlignment="Top" Width="73" Height="55" Background="#FF3FE8A3" FontWeight="Bold" FontSize="18" Click="ButtonClickMultiply"/>
+        <!--<Border BorderThickness="3" HorizontalAlignment="Left" Height="274" Margin="0,96,0,0" VerticalAlignment="Top" Width="292" BorderBrush="#FF898585"/>-->
+        <TextBox x:Name="Result" HorizontalAlignment="Center" Height="52" TextWrapping="Wrap" Text="0" Width="292" Background="#FFD8D1D1" TextAlignment="Right" FontWeight="Bold" IsEnabled="False" Margin="0,44,0,0" VerticalAlignment="Top" Padding="1,1,4,1" HorizontalScrollBarVisibility="Auto" UseLayoutRounding="False" VerticalContentAlignment="Bottom" FontSize="24" FontFamily="Times New Roman"/>
+        <TextBox x:Name="AffichageOpération" HorizontalAlignment="Center" Height="44" TextWrapping="Wrap" Text="" Width="292" Background="#FFD8D1D1" TextAlignment="Right" IsEnabled="False" VerticalAlignment="Top" Padding="1,1,4,1" HorizontalScrollBarVisibility="Auto" UseLayoutRounding="False" VerticalContentAlignment="Bottom" FontSize="24" FontFamily="Times New Roman"/>
+
+    </Grid>
+</Window>
